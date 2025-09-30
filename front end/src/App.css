@@ -1,0 +1,36 @@
+.main-aspect {
+  min-height: 100vh; /* container is full height of the viewport */
+  display: flex;
+  flex-direction: column;    /* stacks child elements vertically */
+  align-items: center;       /* horizontal centering */
+  justify-content: center;   /* verticle centering */
+  gap: 24px;
+  padding: 24px;
+}
+
+h1 { 
+  font-family: "Trebuchet MS", Helvetica, sans-serif; 
+  text-align: center; 
+  margin: 0;
+  font-size: 45px;
+}
+
+.my-box { 
+  width: 500px; 
+  background: #e3e3e3;
+  border: 2px solid #6e6d6d; 
+  padding: 15px; 
+  box-sizing: border-box; 
+  border-radius: 8px; 
+  font-family: system-ui, sans-serif; 
+
+  /* Flexibly size with respect to screen width */
+  width: 100%;              /* Take up full available width */
+  max-width: 700px;         /* Don’t stretch beyond 700px */
+  min-width: 300px;         /* Don’t shrink smaller than 300px */
+
+}
+
+.correct { color: green; }
+.incorrect { color: red; }
+.current { text-decoration: underline; }
